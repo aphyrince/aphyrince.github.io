@@ -4,58 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>페러데이법칙 실험 계산기</title>
-    <style>
-        table {
-            border-collapse: collapse;
-        }
-
-        th,
-        td {
-            width: 100px;
-            height: 50px;
-            text-align: center;
-            border: 1px solid #000;
-
-            vertical-align: middle;
-        }
-    </style>
-    <script src="./ACCalTable.js"></script>
-    <script src="./DCCalTable.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1524112100111460" crossorigin="anonymous"></script>
+    <title>Aphyrince의 포트폴리오</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
-    <h1>1. AC 유도 단자</h1>
-    <table id="ACTable">
-        <tr>
-            <th>횟수</th>
-            <th>주기 T [s]</th>
-            <th>코일의 각속도 w [rad/s]</th>
-            <th>전압의 최대-최소 차이 [V]</th>
-            <th>최대 전압 V0 [V]</th>
-            <th>최대 전압의 RMS Vrms [V]</th>
-            <th>멀티미터의 전압 Vrms [V]</th>
-        </tr>
-        <script>
-            const acCalTable = new ACCalTable("ACTable", 6);
-        </script>
-    </table>
-    <h1>2. DC 유도 단자</h1>
-    <table id="DCTable">
-        <tr>
-            <th>횟수</th>
-            <th>주기 T [s]</th>
-            <th>코일의 각속도 w [rad/s]</th>
-            <th>전압의 최대-최소 차이 [V]</th>
-            <th>최대 전압 V0 [V]</th>
-            <th>최대 전압의 RMS Vrms [V]</th>
-            <th>멀티미터의 전압 Vrms [V]</th>
-        </tr>
-        <script>
-            const dcCalTable = new DCCalTable("DCTable", 6);
-        </script>
-    </table>
+    <div id="nav">
+        <p class="menu menu-1">소개</p>
+        <p class="menu menu-2">스프링 포트폴리오</p>
+        <p class="menu menu-3">유니티 포트폴리오</p>
+        <p class="menu menu-4">음... 어...</p>
+    </div>
+    <div id="content">
+        content
+    </div>
 </body>
 
 </html>

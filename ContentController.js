@@ -1,0 +1,7 @@
+
+
+class ContentController {
+    constructor() {
+
+    }
+}
