@@ -1,14 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>임피던스 측정 (RLC회로)</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            border: 1px solid #000;
+
+            vertical-align: middle;
+        }
+    </style>
+    <script src="./content.js"></script>
 </head>
 
 <body>
-    일반물리실험 - 임피던스 측정 (RLC회로)
+    <h1>일반물리실험 - 임피던스 측정 (RLC회로)</h1>
+    <div id="content">
+        <p>교류 진동수 f [Hz] = <input type="number" id="f"></p>
+        <p>교류 각진동수 w = 2wf [rad/s] = <input type="number" id="w"></p>
+        <p>저항 표준값 R [옴] = <input type="number" id="R"></p>
+        <p>코일 표준값 L [H] = <input type="number" id="L"></p>
+        <p>축전기 표준값 C [F] = <input type="number" id="C"></p>
+        <br>
+        <h3>(1) 전류에 다른 각 회로소자의 전압측정 (rms 값)</h3>
+        <table id="EX1Table">
+            <tr>
+                <th>측정 횟수</th>
+                <th>회로 전체 전류 I [A]</th>
+                <th>저항 전압 V_r [V]</th>
+                <th>코일 전압 V_l [V]</th>
+                <th>축전기 전압 V_c [V]</th>
+            </tr>
+        </table>
+        <script>
+            const content = new Content("content");
+            content.appendEX1Table("EX1Table");
+        </script>
+
+        <h3>(2)</h3>
+        <table id="EX2Table">
+            <tr>
+                <th>저항 실험값 R [옴]</th>
+                <th>유도성 리액턴스 실험값 X_l [H]</th>
+                <th>용량성 리액턴스 실험값 X_c [F]</th>
+            </tr>
+        </table>
+        <script>
+            content.appendEX2Table("EX2Table");
+        </script>
+
+        <h3>(3)</h3>
+        <table id="EX3Table">
+            <tr>
+                <th>목록</th>
+                <th>표준값</th>
+                <th>실험값</th>
+                <th>표준값과의 오차율</th>
+            </tr>
+        </table>
+        <script>
+            content.appendEX3Table("EX3Table");
+        </script>
+
+        <h2> 2. RLC 회로 임피던스 및 위상각</h2>
+        <h3>(1) 임피던스 Z의 실험값과 표준값, 그리고 오차율</h3>
+        <table id="EX4Table">
+            <tr>
+                <th>목록</th>
+                <th>표준값</th>
+                <th>실험값</th>
+                <th>표준값과의 오차율</th>
+            </tr>
+        </table>
+        <script>
+            content.appendEX4Table("EX4Table");
+        </script>
+
+        <h3>(2) 회로의 초기 위상각 실험값과 표준값, 그리고 오차율을 구하여라.</h3>
+        <table id="EX5Table">
+            <tr>
+                <th>목록</th>
+                <th>표준값</th>
+                <th>실험값</th>
+                <th>표준값과의 오차율</th>
+            </tr>
+        </table>
+        <script>
+            content.appendEX5Table("EX5Table");
+        </script>
+    </div>
 </body>
 
 </html>
